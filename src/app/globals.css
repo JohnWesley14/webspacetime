@@ -8,6 +8,18 @@ body{
   font-family: 'Roboto', 'BaiJamjuree', sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  scrollbar-width: thin;
+  
+
+
 
 }
 
+::-webkit-scrollbar{
+  width: 5px;
+  height: 5px;
+  background-color: rgb(60, 60, 60);
+} 
+::-webkit-scrollbar-thumb{
+  background-color: rgb(60, 60, 60);
+} 
