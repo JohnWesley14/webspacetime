@@ -10,7 +10,18 @@ module.exports = {
       fontFamily:{
         sans: 'var(--font-roboto)',
         alt: 'var(--font-bai-jamjuree)',
-      }
+      },
+      
+    },
+    screens: {
+      'sm': '576px',
+      // => @media (min-width: 576px) { ... }
+
+      'md': {'max': '960px'},
+      // => @media (min-width: 960px) { ... }
+
+      'lg': '1440px',
+      // => @media (min-width: 1440px) { ... }
     },
     colors:{
       gray:{

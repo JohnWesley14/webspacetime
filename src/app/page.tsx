@@ -35,10 +35,10 @@ export default async function Home() {
     return <EmptyMemories />
   }
   return(
-    <div className="flex flex-col, gap-10, p-8">
+    <div className="flex flex-col justify-center gap-10, p-8">
       {memories.map((memory) =>{
         return(
-          <div key={memory.id} className="space-y-4">
+          <div key={memory.id} className="space-y-10">
             <time className="flex items-center gap-2 text-sm text-gray-100 -ml-8 before:h-px before:w-5 before:bg-gray-50">
               {dayjs(memory.createdAt).format('D[ de ]MMMM[, ]YYYY')}
             </time>
@@ -46,7 +46,7 @@ export default async function Home() {
             <p className="text-lg leading-relaxed text-gray-100 max-w-[400px] break-words ">
               {memory.excerpt}
             </p>
-            <Link href={`/memories${memory.id}`} className="flex items-center gap-2 text-sm text-gray-200 hover:text-gray-100">
+            <Link href={`/memories${memory.id}`} className="flex items-center pb-5 gap-2 text-sm text-gray-200 hover:text-gray-100">
               Ler mais
               <ArrowRight className="w-4 h4" />
             </Link>
